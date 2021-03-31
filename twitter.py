@@ -296,7 +296,7 @@ if __name__=='__main__':
         f.close()
 
         logger.info("Retwetting hashtag finished now waiting for starting retwetting important people")
-        time.sleep(5)
+        time.sleep(10)
 
         #Running Retweeting important people
         f=open('people.txt','r')
