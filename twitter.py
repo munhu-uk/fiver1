@@ -2,8 +2,16 @@ import tweepy
 import logging
 import time
 import random
-from secrets import *
+#from secrets import *
+from os import environ
 from datetime import datetime, timedelta
+
+
+consumer_key=environ['consumer_key']
+consumer_secret=environ['consumer_secret']
+token=environ['token']
+token_secret=environ['token_secret']
+
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(token,token_secret)
 api = tweepy.API(auth)
