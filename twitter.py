@@ -308,7 +308,7 @@ if __name__=='__main__':
         f.close()
 
         logger.info("Done retweeting tweets from important people")
-        time.sleep(5)
+        time.sleep(10)
 
 
 
