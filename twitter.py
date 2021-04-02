@@ -292,11 +292,11 @@ if __name__=='__main__':
             retweet_tweets_with_hashtag(api,[Tag])
             follow_hashtag(api,Tag)
             logger.info("Waiting...")
-            time.sleep(3)
+            time.sleep(30)
         f.close()
 
         logger.info("Retwetting hashtag finished now waiting for starting retwetting important people")
-        time.sleep(10)
+        time.sleep(600)
 
         #Running Retweeting important people
         f=open('people.txt','r')
@@ -304,11 +304,11 @@ if __name__=='__main__':
             
             get_tweets(api,User)
             logger.info("Waiting...")
-            time.sleep(5)
+            time.sleep(30)
         f.close()
 
         logger.info("Done retweeting tweets from important people")
-        time.sleep(10)
+        time.sleep(3600)
 
 
 
